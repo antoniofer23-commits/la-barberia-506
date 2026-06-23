@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — La Barbería 506</title>
+  <meta name="description" content="Servicios de barbería premium en San José: cortes, arreglo de barba, afeitado tradicional y más. Precios en colones costarricenses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="24" r="23" stroke="#D4AF37" stroke-width="2"/>
+      <rect x="20" y="6" width="8" height="36" rx="4" fill="#D4AF37" opacity="0.15"/>
+      <rect x="20" y="6" width="8" height="6" rx="2" fill="#D4AF37"/>
+      <rect x="20" y="36" width="8" height="6" rx="2" fill="#D4AF37"/>
+      <rect x="20" y="18" width="8" height="4" rx="1" fill="white" opacity="0.8"/>
+      <rect x="20" y="26" width="8" height="4" rx="1" fill="#D4AF37"/>
+    </svg>
+    <div class="nav-logo-text">
+      <span class="name">LA BARBERÍA <span>506</span></span>
+      <span class="tagline">Estilo · Confianza · Comunidad</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="servicios.html" class="active">Servicios</a></li>
+    <li><a href="barberos.html">Barberos</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  <a href="reservar.html" class="btn btn-gold nav-cta">Reservar Cita</a>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Inicio</a>
+  <a href="servicios.html">Servicios</a>
+  <a href="barberos.html">Barberos</a>
+  <a href="nosotros.html">Nosotros</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="reservar.html" style="color: var(--gold);">Reservar Cita →</a>
+</div>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span>Servicios</div>
+  <h1>Nuestros <span class="gold">Servicios</span></h1>
+  <p>Servicios de barbería premium con los mejores productos y técnicas. Precios transparentes en colones costarricenses.</p>
+</div>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon">💈</div>
+        <h3>Corte de Cabello</h3>
+        <p>Corte clásico o moderno adaptado a tu tipo de cabello y estilo personal. Incluye lavado y peinado final.</p>
+        <ul style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; padding-left: 1rem;">
+          <li>• Consulta de estilo personalizada</li>
+          <li>• Corte con tijera o máquina</li>
+          <li>• Lavado incluido</li>
+          <li>• Peinado final</li>
+        </ul>
+        <div class="service-price">₡8,000 <span>· aprox. 30 min</span></div>
+        <button class="service-book-btn" data-service="Corte de Cabello">Reservar este servicio</button>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">🧔</div>
+        <h3>Corte + Barba</h3>
+        <p>El combo más popular. Corte de cabello completo más arreglo y perfilado profesional de barba.</p>
+        <ul style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; padding-left: 1rem;">
+          <li>• Corte de cabello completo</li>
+          <li>• Perfilado y arreglo de barba</li>
+          <li>• Productos premium</li>
+          <li>• Lavado incluido</li>
+        </ul>
+        <div class="service-price">₡12,000 <span>· aprox. 50 min</span></div>
+        <button class="service-book-btn" data-service="Corte + Barba">Reservar este servicio</button>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">✂️</div>
+        <h3>Arreglo de Barba</h3>
+        <p>Perfilado, delineado y mantenimiento profesional de tu barba para un look impecable.</p>
+        <ul style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; padding-left: 1rem;">
+          <li>• Perfilado preciso</li>
+          <li>• Delineado con navaja</li>
+          <li>• Aceite hidratante de barba</li>
+          <li>• Peinado final</li>
+        </ul>
+        <div class="service-price">₡6,000 <span>· aprox. 20 min</span></div>
+        <button class="service-book-btn" data-service="Arreglo de Barba">Reservar este servicio</button>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">🪒</div>
+        <h3>Afeitado Tradicional</h3>
+        <p>La experiencia clásica del barbero: navaja, toalla caliente y los mejores productos para un afeitado suave y preciso.</p>
+        <ul style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; padding-left: 1rem;">
+          <li>• Preparación con toalla caliente</li>
+          <li>• Crema de afeitar premium</li>
+          <li>• Afeitado con navaja profesional</li>
+          <li>• Loción post-afeitado</li>
+        </ul>
+        <div class="service-price">₡7,000 <span>· aprox. 30 min</span></div>
+        <button class="service-book-btn" data-service="Afeitado Tradicional">Reservar este servicio</button>
+      </div>
+
+      <div class="service-card fade-up" style="border-color: rgba(212,175,55,0.4);">
+        <div style="position: absolute; top: -1px; right: 20px; background: var(--gold); color: var(--black); font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 2px; padding: 4px 12px; border-radius: 0 0 6px 6px;">MÁS POPULAR</div>
+        <div class="service-icon">👑</div>
+        <h3>Corte + Afeitado + Barba</h3>
+        <p>La experiencia completa de La Barbería 506. El mejor tratamiento para el hombre que cuida su imagen.</p>
+        <ul style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; padding-left: 1rem;">
+          <li>• Corte de cabello completo</li>
+          <li>• Afeitado tradicional con navaja</li>
+          <li>• Arreglo y perfilado de barba</li>
+          <li>• Lavado + productos premium</li>
+        </ul>
+        <div class="service-price">₡15,000 <span>· aprox. 75 min</span></div>
+        <button class="service-book-btn" data-service="Corte + Afeitado + Barba">Reservar este servicio</button>
+      </div>
+    </div>
+
+    <!-- Price Table -->
+    <div style="margin-top: 4rem;" class="fade-up">
+      <div class="text-center">
+        <span class="section-label">Resumen de Precios</span>
+        <h2 class="section-title">Tabla de <span class="gold">Precios</span></h2>
+        <div class="divider divider-center"></div>
+      </div>
+      <div style="background: var(--black-card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-top: 2rem;">
+        <table style="width: 100%; border-collapse: collapse;">
+          <thead>
+            <tr style="background: rgba(212,175,55,0.1); border-bottom: 2px solid var(--gold);">
+              <th style="padding: 1.2rem 1.5rem; text-align: left; font-family: 'Oswald', sans-serif; letter-spacing: 2px; font-size: 0.85rem; color: var(--gold);">SERVICIO</th>
+              <th style="padding: 1.2rem 1.5rem; text-align: center; font-family: 'Oswald', sans-serif; letter-spacing: 2px; font-size: 0.85rem; color: var(--gold);">DURACIÓN</th>
+              <th style="padding: 1.2rem 1.5rem; text-align: right; font-family: 'Oswald', sans-serif; letter-spacing: 2px; font-size: 0.85rem; color: var(--gold);">PRECIO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 1.2rem 1.5rem;">💈 Corte de Cabello</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: center; color: var(--text-muted);">~30 min</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: right; color: var(--gold); font-family: 'Oswald', sans-serif; font-size: 1.1rem;">₡8,000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 1.2rem 1.5rem;">✂️ Arreglo de Barba</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: center; color: var(--text-muted);">~20 min</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: right; color: var(--gold); font-family: 'Oswald', sans-serif; font-size: 1.1rem;">₡6,000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 1.2rem 1.5rem;">🪒 Afeitado Tradicional</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: center; color: var(--text-muted);">~30 min</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: right; color: var(--gold); font-family: 'Oswald', sans-serif; font-size: 1.1rem;">₡7,000</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 1.2rem 1.5rem;">🧔 Corte + Barba</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: center; color: var(--text-muted);">~50 min</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: right; color: var(--gold); font-family: 'Oswald', sans-serif; font-size: 1.1rem;">₡12,000</td>
+            </tr>
+            <tr style="background: rgba(212,175,55,0.05);">
+              <td style="padding: 1.2rem 1.5rem;">👑 Corte + Afeitado + Barba</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: center; color: var(--text-muted);">~75 min</td>
+              <td style="padding: 1.2rem 1.5rem; text-align: right; color: var(--gold); font-family: 'Oswald', sans-serif; font-size: 1.2rem; font-weight: 700;">₡15,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;">* Precios en colones costarricenses (CRC). Sujetos a cambio sin previo aviso.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-card">
+  <div class="container" style="text-align: center;">
+    <h2 class="section-title fade-up">¿Listo para <span class="gold">Reservar?</span></h2>
+    <div class="divider divider-center"></div>
+    <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 2rem;" class="fade-up">Elige tu servicio favorito y reserva en segundos por WhatsApp.</p>
+    <a href="reservar.html" class="btn btn-gold btn-lg fade-up">✂ Reservar Mi Cita</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+      <p>© 2024 La Barbería 506. Todos los derechos reservados.</p>
+      <p style="color: var(--gold);">Estilo. Confianza. Comunidad.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/50685068000?text=Hola!%20Quiero%20reservar%20una%20cita" target="_blank" class="whatsapp-float">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <span class="whatsapp-text">WhatsApp</span>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>
