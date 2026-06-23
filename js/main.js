@@ -1,3 +1,12 @@
+// Enable animations only after page load
+window.addEventListener('load', () => {
+  document.body.classList.add('js-ready');
+  // Immediately show hero elements
+  document.querySelectorAll('.hero .fade-up').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), i * 180 + 100);
+  });
+});
+
 // ===== NAVBAR SCROLL =====
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
