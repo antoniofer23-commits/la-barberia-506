@@ -1,3 +1,12 @@
+// Enable animations only after page load
+window.addEventListener('load', () => {
+  document.body.classList.add('js-ready');
+  // Immediately show hero elements
+  document.querySelectorAll('.hero .fade-up').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), i * 180 + 100);
+  });
+});
+
 // ===== NAVBAR SCROLL =====
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
@@ -56,11 +65,10 @@ bookingForm?.addEventListener('submit', function(e) {
   const name = document.getElementById('b-name')?.value;
   const phone = document.getElementById('b-phone')?.value;
   const service = document.getElementById('b-service')?.value;
-  const barber = document.getElementById('b-barber')?.value;
   const date = document.getElementById('b-date')?.value;
   const time = document.getElementById('b-time')?.value;
 
-  const msg = `¡Hola! Quiero reservar una cita en La Barbería 506 🔱\n\n👤 Nombre: ${name}\n✂️ Servicio: ${service}\n💈 Barbero: ${barber || 'Sin preferencia'}\n📅 Fecha: ${date}\n⏰ Hora: ${time}\n📱 Teléfono: ${phone}\n\n¡Gracias!`;
+  const msg = `¡Hola! Quiero reservar una cita en La Barbería 506 🔱\n\n👤 Nombre: ${name}\n✂️ Servicio: ${service}\n📅 Fecha: ${date}\n⏰ Hora: ${time}\n📱 Teléfono: ${phone}\n\n¡Gracias!`;
 
   setTimeout(() => {
     const waUrl = `https://wa.me/50685068000?text=${encodeURIComponent(msg)}`;
